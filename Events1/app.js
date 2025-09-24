@@ -15,5 +15,10 @@ newBtn.onclick = function() {
     }
 }
 
-// Now changing the color of the text and improving it's size:- 
+// Now changing the color..
+let newChange = document.querySelector("#newBtn");
+newChange.style.fontSize = " 1.2em";
+newChange.style.backgroundColor = "whitesmoke";
+newChange.style.color = "green";
+
 
