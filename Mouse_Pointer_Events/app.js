@@ -1,4 +1,4 @@
-let btn = document.querySelector("button"); // Button Accessed 
+let btn = document.querySelector("#first"); // Button Accessed 
 console.dir(btn);
 btn.style.color = " black ";
 btn.style.backgroundColor = "#FFEBCD";
@@ -39,6 +39,16 @@ btn2.onclick = function () {
     btn2.style.backgroundColor = "aqua";
 }
 
+
+// Now selecting all the buttons together and performing actions through it.. 
+
+let commonBtn = document.querySelectorAll("#common");
+
+for ( commonBtn of commonBtns) {
+    commonBtn.onclick = function() {
+        console.log(" Pic has been clicked");
+    }
+}
 
 
 
