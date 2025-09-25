@@ -50,5 +50,12 @@ for ( newBtn of newBtns) {
     }
 }
 
+// Exploring on about onmouseenter.. 
+let mouseBtn = document.querySelector("#unique");
+mouseBtn.style.margin = "10px";
+mouseBtn.onmouseenter = function() {
+    mouseBtn.style.backgroundColor = "pink";
+}
+
 
 
