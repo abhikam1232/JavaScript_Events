@@ -42,11 +42,11 @@ btn2.onclick = function () {
 
 // Now selecting all the buttons together and performing actions through it.. 
 
-let commonBtn = document.querySelectorAll("#common");
+let newBtns = document.querySelectorAll("button");
 
-for ( commonBtn of commonBtns) {
-    commonBtn.onclick = function() {
-        console.log(" Pic has been clicked");
+for ( newBtn of newBtns) {
+    newBtn.onclick = function() {
+        console.log(" U liked itt !! ")
     }
 }
 
