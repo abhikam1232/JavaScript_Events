@@ -57,5 +57,20 @@ mouseBtn.onmouseenter = function() {
     mouseBtn.style.backgroundColor = "pink";
 }
 
+// New task on onmouseenter:- 
+
+let newButton = document.querySelector("#mouse");
+
+newButton.onmouseenter = function() {
+    newButton.style.color = " white";
+    newButton.style.backgroundColor = "lightgreen";
+    newButton.style.fontSize = "18px";
+};
+
+newButton.onmouseleave = function() {
+    newButton.style.color = "black";
+    newButton.style.backgroundColor = "white";
+    newButton.style.fontSize = "16px";
+};
 
 
