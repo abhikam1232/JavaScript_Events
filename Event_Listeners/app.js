@@ -16,4 +16,6 @@ myButton.addEventListener("dblclick", function() {
     myButton.innerText = "Button";
     myButton.style.color = "blue";
     myButton.backgroundColor = " whitesmoke";
+    alert(" Button has been clicked");
 });
+
