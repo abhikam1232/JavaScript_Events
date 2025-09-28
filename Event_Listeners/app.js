@@ -19,3 +19,16 @@ myButton.addEventListener("dblclick", function() {
     alert(" Button has been clicked");
 });
 
+
+// New task of contextmenu:- 
+
+let contextBtn = document.querySelector("#context");
+contextBtn.style.margin = "20px";
+
+contextBtn.addEventListener("contextmenu", function(event) {
+    event.preventDefault();
+    alert(" Right Custom has been accessed");
+    contextBtn.style.backgroundColor = " red";
+    contextBtn.innerText = " Right clicked";
+});
+
