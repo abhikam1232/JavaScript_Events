@@ -63,14 +63,29 @@ let newButton = document.querySelector("#mouse");
 
 newButton.onmouseenter = function() {
     newButton.style.color = " white";
-    newButton.style.backgroundColor = "lightgreen";
+    newButton.style.backgroundColor = "green";
     newButton.style.fontSize = "18px";
 };
 
-newButton.onmouseleave = function() {
+newButton.onmouseleave = function() {   
     newButton.style.color = "black";
     newButton.style.backgroundColor = "white";
     newButton.style.fontSize = "16px";
 };
 
 
+
+let ButtonTog = document.querySelector("#toggleBtn");
+ButtonTog.style.margin = "10px";
+
+ButtonTog.onmouseenter = function() {
+    ButtonTog.innerText = " Mouse Inside ";
+    ButtonTog.style.backgroundColor = "blue";
+    ButtonTog.style.color = "white";
+    ButtonTog.style.cursor = "pointer";
+};
+
+ButtonTog.onmouseleave = function () {
+    ButtonTog.innerText = "Mouse Outside";
+    ButtonTog.style.backgroundColor = "grey";
+}
