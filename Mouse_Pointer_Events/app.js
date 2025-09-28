@@ -73,7 +73,7 @@ newButton.onmouseleave = function() {
     newButton.style.fontSize = "16px";
 };
 
-
+// new task:- 
 
 let ButtonTog = document.querySelector("#toggleBtn");
 ButtonTog.style.margin = "10px";
@@ -88,4 +88,19 @@ ButtonTog.onmouseenter = function() {
 ButtonTog.onmouseleave = function () {
     ButtonTog.innerText = "Mouse Outside";
     ButtonTog.style.backgroundColor = "grey";
+}
+
+// Adding one more class to the button:- 
+
+let press = document.querySelector("#classBtn");
+press.style.margin = " 10px";
+
+console.dir(press.classList);
+
+press.onmouseenter = function() {
+    press.classList.add("activeBtn");
+};
+
+press.onmouseleave = function() {
+    press.classList.toggle("normal");
 }

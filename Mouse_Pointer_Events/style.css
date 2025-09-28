@@ -1,0 +1,14 @@
+.activeBtn {
+    font-size: 1.3em;
+    color: maroon;
+    background-color: rgba(210, 155, 164, 0.732);
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px yellowgreen;
+    font-family: cursive;
+}
+
+.normal {
+    background-color: black;
+    color: white;
+    text-decoration: none;
+}
