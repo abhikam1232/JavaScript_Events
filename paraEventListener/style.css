@@ -1,0 +1,14 @@
+body{
+    text-align: center;
+}
+
+.box{
+    height: 200px;
+    width: 200px;
+    background-color: rgb(178, 224, 108);
+    border-width: 2px;
+    border-style: solid;
+    border-color: black;
+    margin: auto;
+    margin-top: 20px;
+}
