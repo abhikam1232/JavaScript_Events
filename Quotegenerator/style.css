@@ -1,0 +1,18 @@
+body {
+    text-align: center;
+}
+
+div{
+    height: 150px;
+    width: 400px;
+    border-width: 2px;
+    border-style: dashed;
+    border-color: purple;
+    background-color: rgba(255, 192, 203, 0.518);
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    margin-top:  30px;
+    font-size: 1.3em;
+    padding-top: 50px;
+}
