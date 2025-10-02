@@ -10,7 +10,7 @@ let h3 = document.querySelector("h3");
 
 
 
-btn.addEventListener("mouseenter", function(){
+btn.addEventListener("click", function(){
     let notif = document.createElement("div");
     notif.innerHTML = "✅ This is a notification! <br/> You cracked ur 1st job at JP Morgan Chase and Co ";
 
@@ -24,15 +24,16 @@ btn.addEventListener("mouseenter", function(){
     notif.style.boxShadow = " 2px 2px 10px black";
     notif.style.fontSize = "1.4em";
     notif.style.zIndex = "1000";
-
-    h3.append(notif);
+    notif.style.backgroundColor = "PaleGreen";
+    notif.style.color = "maroon";
+    body.append(notif);
 
     setTimeout(function (){
         notif.remove();
-    }, 2000);
+    }, 3000);
+
+    body.style.backgroundColor = "Olive";
     });
 
     
-    
-
     
