@@ -30,7 +30,7 @@ btn.addEventListener("click", function(){
 
     setTimeout(function (){
         notif.remove();
-    }, 3000);
+    }, 5000);
 
     body.style.backgroundColor = "Olive";
     });
