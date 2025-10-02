@@ -42,6 +42,35 @@ h3.addEventListener("click", darkMode);
 
 par.addEventListener("click", darkMode);
 
+// Now performing next task of this.. 
+
+function hoverMe() {
+    this.style.backgroundColor = "yellow";
+    this.style.color = "black";
+    this.style.fontWeight = "bold";
+};
+
+function noHover() {
+    this.style.backgroundColor = "white";
+    this.style.color = "black";
+    this.style.fonSize = "normal";
+}
+
+// Now giving this function to each element..
+
+h1.addEventListener("mouseenter", hoverMe);
+h1.addEventListener("mouseleave", noHover);
+
+h2.addEventListener("mouseenter", hoverMe);
+h2.addEventListener("mouseleave", noHover);
+
+h3.addEventListener("mouseenter", hoverMe);
+h3.addEventListener("mouseleave", noHover);
+
+par.addEventListener("mouseenter", hoverMe);
+par.addEventListener("mouseleave", noHover);
+
+
 
 
 
