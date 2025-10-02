@@ -1,35 +1,28 @@
 let input = document.querySelector("#input");
-input.style.marginTop = "20px";
-input.style.fontSize = "1.1em";
-
 let btnAdd = document.querySelector("#add");
-btnAdd.style.paddingLeft = "5px";
-btnAdd.style.paddingRight = "5px";
-
 let btnRemove = document.querySelector("#Remove");
-btnRemove.style.paddingLeft = "5px";
-btnRemove.style.paddingRight = "5px";
+let container = document.querySelector("div");
 
-// Create ul and append to body or a specific container
+// Create the <ul> list ONCE and add it to the page
 let ul = document.createElement("ul");
-document.body.appendChild(ul); // Append to body instead of div
+container.appendChild(ul);
 
-// Adding tasks
+// --- ADDING TASKS ---
 btnAdd.addEventListener("click", function() {
     let task = input.value.trim();
-    
+
     if (task !== "") {
         let li = document.createElement("li");
         li.textContent = task;
         ul.appendChild(li);
-        input.value = "";
+        input.value = ""; // Clear the input
+        input.focus(); // Focus back on the input
     }
 });
 
-// Removing tasks
+// --- REMOVING THE LAST TASK ---
 btnRemove.addEventListener("click", function() {
     let lastTask = ul.lastElementChild;
-    
     if (lastTask) {
         ul.removeChild(lastTask);
     }
