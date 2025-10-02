@@ -1,0 +1,21 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+div {
+    margin: auto;
+    text-align: center;
+    margin-top: 300px;
+}
+
+body {
+    background-color: grey;
+}
+
+h3 {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
