@@ -1,0 +1,43 @@
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    margin: auto;
+}
+
+.header {
+    align-items: center;
+    text-align: center;
+    margin-top: 200px;
+    font-size: 1.2em;
+    font-family: cursive;
+}
+
+.elements {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+#change {
+    margin-right: 10px;
+    padding: 5px;
+    font-size: 1.3em;
+    border-radius: 10px;
+}
+
+#apply{
+    margin-left: 10px;
+    padding: 5px;
+    font-size: 1.3em;
+    border-radius: 10px;
+}
+
+.input {
+    width: 300px;
+}
+
