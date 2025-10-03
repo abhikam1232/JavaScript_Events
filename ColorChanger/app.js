@@ -4,6 +4,7 @@ let input = document.querySelector(".input");
 let applyBtn = document.querySelector("#apply");
 let h1 = document.querySelector("h1");
 
+
 // First thing we only need to deal with change button with changes the random color 
 
 
@@ -14,6 +15,13 @@ changeBtn.addEventListener("click", function() {
 
     let body = document.querySelector("body");
     body.style.backgroundColor = randomColor;
+
+    let randomText = getRandomColor(); // This is for my text 
+    h1.style.color = randomText;
+
+    // Changing the borders :- 
+    applyBtn.style.border = "none";
+    changeBtn.style.border = "none";
 
 
 });
