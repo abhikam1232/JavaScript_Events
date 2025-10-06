@@ -54,4 +54,5 @@ input3.addEventListener("keydown", function(eve) {
         console.log(" Player is moving at the right ");
     }
     
-})
+});
+
