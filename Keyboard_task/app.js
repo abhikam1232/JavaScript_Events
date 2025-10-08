@@ -2,7 +2,7 @@ let box = document.querySelector(".box"); // box has accessed
 /** let top = 100;
 let right = 100; **/
 
-        
+box.style.zIndex = 1;
 box.setAttribute("tabindex", "0");
 
 let x = 0;
@@ -57,8 +57,20 @@ box.addEventListener("keydown", function(event){
 
         box.style.transform = `translate(${x}px, ${y}px)`;
 
-
-        
 });
+
+let btn = document.querySelector("button");
+btn.style.position = "absolute";
+btn.style.right = "750px";
+btn.style.marginTop = "20px";
+btn.style.fontSize = "1.3em";
+btn.style.padding = "5px";
+
+btn.addEventListener("click", function() {
+    x = 0;
+    y = 0;
+    box.style.transform = "translate(0px, 0px)";
+    box.focus();
+})
 
 
