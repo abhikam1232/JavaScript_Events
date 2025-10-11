@@ -1,0 +1,68 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+div {
+    margin: auto;
+    text-align: center;
+    margin-top: 20px;
+}
+
+span {
+    font-size: 1.8em;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#name {
+    margin-bottom: 5px;
+    height: 25px;
+    width: 200px;
+}
+
+#mail {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    height: 25px;
+    width: 200px;
+}
+
+#num {
+     margin-top: 5px;
+    margin-bottom: 5px;
+    height: 25px;
+    width: 200px;
+}
+
+.major{
+    height: 500px;
+    width: 600px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: black;
+    border-radius: 25px;
+    background-color: #ffffff ;
+    border: none;
+}
+
+.head{
+    padding-top: 30px;
+    font-size: 1.5em;
+}
+
+.elements{
+    padding: 50px;
+    font-size: 1.2em;
+}
+
+body {
+    background-color:  #dadcdd ;
+}
+
+img{
+    height: 600px;
+    width: 100%;
+    opacity: 0.8;
+}
