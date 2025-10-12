@@ -9,7 +9,13 @@ form.addEventListener("submit", function(eve){
 
 
 myBox.addEventListener("change", function(){
-    console.log(" The value has been changed");
+    console.log(" Change Event");
     console.log("final value = ", this.value);
 });
 
+
+// This is my input event.. 
+myBox.addEventListener("input", function() {
+    console.log(" This is input event");
+    console.log(" final value = ", this.value);
+})
