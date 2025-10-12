@@ -36,4 +36,22 @@ input.addEventListener("input", function(){
 input.addEventListener("change", function() {
     console.log("change event for name checking");
     console.log("Your complete name:- ", this.value);
-})
+});
+
+// When the user selects a color from a dropdown, the background color of the page should change.
+// We’ll use the change event to detect which color is chosen.
+
+let drop = document.querySelector(".color");
+
+drop.addEventListener("change", function() {
+
+    let selectedColor = this.value;
+
+    if (selectedColor) {
+        document.body.style.backgroundColor = selectedColor;
+        console.log("background color changes to:- ", selectedColor);
+    } else {
+        document.body.style.backgroundColor = "white";
+    }
+
+});
