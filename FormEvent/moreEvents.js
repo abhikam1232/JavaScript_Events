@@ -41,7 +41,7 @@ input.addEventListener("change", function() {
 // When the user selects a color from a dropdown, the background color of the page should change.
 // We’ll use the change event to detect which color is chosen.
 
-let drop = document.querySelector(".color");
+/**let drop = document.querySelector(".color");
 
 drop.addEventListener("change", function() {
 
@@ -53,5 +53,14 @@ drop.addEventListener("change", function() {
     } else {
         document.body.style.backgroundColor = "white";
     }
+}); **/
+
+// New Activity:- 
+let heading = document.querySelector("h2");
+let par = document.querySelector("p");
+let myInput = document.querySelector("#myInp");
+
+myInput.addEventListener("input", function() {
+    par.innerText = this.value;
 
 });
