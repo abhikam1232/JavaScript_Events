@@ -8,3 +8,9 @@ container.addEventListener("mouseout", function(eve) {
     text.style.innerText = " Mouseout Applied";
     container.style.borderRadius = "18px";
 });
+
+container.addEventListener("mouseover", function() {
+    container.style.color = "#000000";
+    container.style.backgroundColor = "#748873";
+    text.style.innerText = "I am the orignal box ";
+});
