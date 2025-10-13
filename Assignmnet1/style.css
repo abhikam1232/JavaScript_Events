@@ -1,0 +1,19 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+div{
+    height: 300px;
+    width: 340px;
+    border-width: 1.5px;
+    border-style: solid;
+    background-color: #5a969067;
+    margin: auto;
+    margin-top: 200px;
+    text-align: center;
+    padding-top: 120px;
+    font-size: 1.4em;
+    color: #37353E;
+}
