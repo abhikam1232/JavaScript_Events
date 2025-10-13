@@ -1,5 +1,6 @@
 let container = document.querySelector("div");
 let text = document.querySelector("span");
+let body = document.querySelector("body");
 
 container.addEventListener("mouseout", function(eve) {
     eve.preventDefault();
@@ -12,7 +13,7 @@ container.addEventListener("mouseout", function(eve) {
 container.addEventListener("mouseover", function() {
     container.style.color = "#000000";
     container.style.backgroundColor = "#748873";
-    text.innerText = "I am the orignal box ";
+    text.innerText = "Mouseover applied ";
 });
 
 // Now we are exploring the keypress event:- 
@@ -26,3 +27,20 @@ btn.addEventListener("keydown", function () {
     container.style.color = "white";
     text.innerText = "Keypress event has Activated";
 }); 
+
+// Now we need to perform a task that whaen we scroll the page background color will change:- 
+window.addEventListener("scroll", function() {
+    let changeColor = randomcolorChanger();
+    body.style.backgroundColor = changeColor;
+
+});
+
+function randomcolorChanger() {
+    let red = Math.floor(Math.random() * 255);
+    let green = Math.floor(Math.random() * 255);
+    let blue = Math.floor(Math.random() * 255);
+
+    let color = `rgb(${red}, ${green}, ${blue})`;
+    return color;
+}
+
