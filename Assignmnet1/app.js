@@ -44,3 +44,12 @@ function randomcolorChanger() {
     return color;
 }
 
+// Now exloring load event:- 
+let msg = document.querySelector("#msg");
+
+window.addEventListener("load", function() {
+    msg.innerText = " The page is still loading";
+    msg.style.color = "pink";
+    msg.style.fontSize = "1.4em";
+});
+

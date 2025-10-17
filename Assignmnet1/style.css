@@ -18,4 +18,11 @@ div{
     color: #37353E;
 }
 
- 
+#msg{
+    text-align: center;
+    margin-left: 680px;
+}
+
+.message {
+    margin-left: 30px;
+}
