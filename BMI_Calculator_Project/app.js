@@ -17,10 +17,11 @@ function BMI() {
     return result;
 };
 
-btn.addEventListener("click", function() {
+btn.addEventListener("click", function(eve) {
+    eve.preventDefault();
     let par = document.createElement("p");
     main.appendChild(par);
     par.innerText = BMI();
     par.style.marginTop = "15px";
-    
 });
+

@@ -4,9 +4,29 @@
     box-sizing: border-box;
 }
 
+body{
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+}
+
 .major{
     text-align: center;
     margin-top: 150px;
+    border-width: 1.5px;
+    border-style: solid;
+    border-color: black;
+    height: 250px;
+    background-color: #EEEEEE;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 600px;
+    padding-top: 60px;
+    border-radius: 12px;
+    
 }
 
 h2{
